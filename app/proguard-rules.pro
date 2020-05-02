@@ -19,3 +19,10 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+#TODO: please add this to your proguard-rules.pro
+-dontwarn com.android.installreferrer
+-keep class com.kochava.** {*;}
+-keep class com.google.** { *; }
+-keep class * extends android.webkit.WebChromeClient { *; }
+-dontwarn im.delight.android.webview.**
